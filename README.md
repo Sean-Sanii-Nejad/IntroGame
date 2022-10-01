@@ -1,5 +1,5 @@
 # IntroGame
-Starter Game for Queen Mary MSc
+Starter Game for Queen Mary MSc Computer Games
 
 Just playing around and testing things
 
