@@ -9,8 +9,14 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_Audio();
 	RegisterModule_Audio();
 
+	void RegisterModule_InputLegacy();
+	RegisterModule_InputLegacy();
+
 	void RegisterModule_JSONSerialize();
 	RegisterModule_JSONSerialize();
+
+	void RegisterModule_Physics();
+	RegisterModule_Physics();
 
 	void RegisterModule_RuntimeInitializeOnLoadManagerInitializer();
 	RegisterModule_RuntimeInitializeOnLoadManagerInitializer();
@@ -84,12 +90,19 @@ class Texture2DArray; template <> void RegisterUnityClass<Texture2DArray>(const 
 class Texture3D; template <> void RegisterUnityClass<Texture3D>(const char*);
 class TimeManager; template <> void RegisterUnityClass<TimeManager>(const char*);
 class Transform; template <> void RegisterUnityClass<Transform>(const char*);
+class BoxCollider; template <> void RegisterUnityClass<BoxCollider>(const char*);
+class CapsuleCollider; template <> void RegisterUnityClass<CapsuleCollider>(const char*);
+class Collider; template <> void RegisterUnityClass<Collider>(const char*);
+class PhysicMaterial; template <> void RegisterUnityClass<PhysicMaterial>(const char*);
+class PhysicsManager; template <> void RegisterUnityClass<PhysicsManager>(const char*);
+class Rigidbody; template <> void RegisterUnityClass<Rigidbody>(const char*);
+class SphereCollider; template <> void RegisterUnityClass<SphereCollider>(const char*);
 
 void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 56 non stripped classes
+	//Total: 63 non stripped classes
 	//0. AudioBehaviour
 	RegisterUnityClass<AudioBehaviour>("Audio");
 	//1. AudioClip
@@ -202,5 +215,19 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<TimeManager>("Core");
 	//55. Transform
 	RegisterUnityClass<Transform>("Core");
+	//56. BoxCollider
+	RegisterUnityClass<BoxCollider>("Physics");
+	//57. CapsuleCollider
+	RegisterUnityClass<CapsuleCollider>("Physics");
+	//58. Collider
+	RegisterUnityClass<Collider>("Physics");
+	//59. PhysicMaterial
+	RegisterUnityClass<PhysicMaterial>("Physics");
+	//60. PhysicsManager
+	RegisterUnityClass<PhysicsManager>("Physics");
+	//61. Rigidbody
+	RegisterUnityClass<Rigidbody>("Physics");
+	//62. SphereCollider
+	RegisterUnityClass<SphereCollider>("Physics");
 
 }
