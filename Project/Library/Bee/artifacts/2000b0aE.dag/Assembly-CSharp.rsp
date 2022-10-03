@@ -103,6 +103,7 @@
 -define:ENABLE_TERRAIN
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
+-define:ENABLE_INPUT_SYSTEM
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
@@ -311,6 +312,7 @@
 -r:"/home/sean/Unity/Hub/Editor/2022.1.17f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
 -r:"/home/sean/Unity/Hub/Editor/2022.1.17f1/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.WebGLModule.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
+-r:"Library/Bee/artifacts/2000b0aE.dag/Unity.InputSystem.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.Rider.Editor.ref.dll"
@@ -336,7 +338,22 @@
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.VisualStudio.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/AurynSky/Forest Pack/Scripts/ChestDemo.cs"
+"Assets/AurynSky/Forest Pack/Scripts/MaterialMover.cs"
+"Assets/AurynSky/Forest Pack/Scripts/Rotator.cs"
+"Assets/AurynSky/Forest Pack/Scripts/WheelController.cs"
+"Assets/Scripts/CameraController.cs"
 "Assets/Scripts/Player.cs"
+"Assets/Scripts/PlayerController.cs"
+"Assets/TowerDefence_Vsquad/Scripts/Enemy.cs"
+"Assets/TowerDefence_Vsquad/Scripts/EnemyBullet.cs"
+"Assets/TowerDefence_Vsquad/Scripts/EnemyHp.cs"
+"Assets/TowerDefence_Vsquad/Scripts/Tower.cs"
+"Assets/TowerDefence_Vsquad/Scripts/TowerBullet.cs"
+"Assets/TowerDefence_Vsquad/Scripts/TowerHP.cs"
+"Assets/TowerDefence_Vsquad/Scripts/TowerTrigger.cs"
+"Assets/TowerDefence_Vsquad/Scripts/WaveSpawn.cs"
+"Assets/Week2/Input/PlayerInput.cs"
 -langversion:9.0
 
 /deterministic

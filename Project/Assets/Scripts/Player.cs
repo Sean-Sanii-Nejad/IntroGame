@@ -9,9 +9,7 @@ public class Player : MonoBehaviour
     private Rigidbody rigidbodyComponent;
     private bool _jumpKeyWasPressed;
     private float _horizontalInput;
-    
-    
-
+    private float _verticalInput;
     void Start()
     {
         rigidbodyComponent = GetComponent<Rigidbody>();
@@ -23,10 +21,14 @@ public class Player : MonoBehaviour
             _jumpKeyWasPressed = true;
         }
         _horizontalInput = Input.GetAxis("Horizontal");
+        _verticalInput = Input.GetAxis("Vertical");
     }
     private void FixedUpdate()
     {
+        rigidbodyComponent.velocity = new Vector3(rigidbodyComponent.velocity.x, rigidbodyComponent.velocity.y, _verticalInput*2);
         rigidbodyComponent.velocity = new Vector3(_horizontalInput*2, rigidbodyComponent.velocity.y, rigidbodyComponent.velocity.z);
+        
+        
         if (Physics.OverlapSphere(groundCheckTransform.position, 0.1f, playerMask).Length == 0)
         {
             return;
