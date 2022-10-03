@@ -345,6 +345,7 @@
 "Assets/Scripts/CameraController.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/Rotator.cs"
 "Assets/TowerDefence_Vsquad/Scripts/Enemy.cs"
 "Assets/TowerDefence_Vsquad/Scripts/EnemyBullet.cs"
 "Assets/TowerDefence_Vsquad/Scripts/EnemyHp.cs"
