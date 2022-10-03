@@ -353,7 +353,6 @@
 "Assets/TowerDefence_Vsquad/Scripts/TowerHP.cs"
 "Assets/TowerDefence_Vsquad/Scripts/TowerTrigger.cs"
 "Assets/TowerDefence_Vsquad/Scripts/WaveSpawn.cs"
-"Assets/Week2/Input/PlayerInput.cs"
 -langversion:9.0
 
 /deterministic
